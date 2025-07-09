@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shreshtha Advisory - Home</title>
+
+  <!-- Font Awesome & Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"/>
+  <style>
+    /*==============================
+      Root Variables
+    ==============================*/
+    :root {
+      --primary-color:linear-gradient(135deg, #0d1b2a,#00acc1);
+      --accent-color: #ffcc00;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d1b2a,#00acc1);
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .header-title {
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+.header-title h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.header-title .tagline {
+  margin: 0; /* Add this line */
+  font-size: 1em;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Samarkan';
+  src: url('fonts/SAMARN__.TTF') format('truetype');
+}
+
+h1, .samarkan-text {
+  font-family: 'Samarkan', cursive;
+}
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.8em;
+      cursor: pointer;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      font-size: 1.8em;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      gap: 1em;
+    }
+nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Makes it bold */
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1.5em;
+    }
+  
+    /*==============================
+      Below Header Logo Section
+    ==============================*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 20px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+    .section {
+      border: 2px solid;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 500px;
+      flex: 1 1 300px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .section h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .card-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    @media (max-width: 768px) {
+ .card-wrapper {
+  justify-content: space-around;
+}
+
+    }
+    .card {
+      flex: 1 1 200px;
+      max-width: 220px;
+      min-height: 180px;
+      border-radius: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card .icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .card h5 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    /* Colors */
+    .blue {
+      background: linear-gradient(135deg, #0079bf, #00c6ff);
+    }
+
+    .purple {
+      background: linear-gradient(135deg, #7b2ff7, #f107a3);
+    }
+
+    .green {
+      background: linear-gradient(135deg, #00b09b, #96c93d);
+    }
+
+    .violet {
+      background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    }
+
+    /* Button styling */
+    .button-wrapper {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .know-more-btn  {
+      padding: 14px 28px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(135deg, #0D1B2A, #00ACC1);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 172, 193, 0.3);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+
+    .know-more-btn:hover{
+      background: linear-gradient(135deg, #00ACC1, #0D1B2A); /* reverse gradient */
+      transform: translateY(-2px);
+    }
+
+    /* Target section */
+    #more-info {
+      margin: 80px auto;
+      max-width: 800px;
+      padding: 40px 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      border: 2px dashed #ccc;
+    }
+
+   
+    /*==============================
+      Services Section
+    ==============================*/
+    .services-section {
+      background: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .services-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+  
+    .owl-carousel .item {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+    }
+  
+    .owl-carousel .item h3 {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+  
+    .owl-carousel .item p {
+      font-size: 0.95em;
+      color: #333;
+    }
+  
+    /*==============================
+      Animations
+    ==============================*/
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+    .popup {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+  
+    .popup.visible {
+      opacity: 1;
+      transform: translateY(0);
+      animation: fadeInUp 0.8s ease-out;
+    }
+  
+    @keyframes slideInLeft {
+      0% { transform: translateX(-100px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+  
+    @keyframes slideInRight {
+      0% { transform: translateX(100px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+  
+    @keyframes fadeSlideDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  
+    @keyframes popInRight {
+      0% { opacity: 0; transform: translateX(100px) scale(0.8); }
+      100% { opacity: 1; transform: translateX(0) scale(1); }
+    }
+  
+    @keyframes slideFadeInFromLeft {
+      0% { transform: translateX(-100px) scale(0.95); opacity: 0; }
+      100% { transform: translateX(0) scale(1); opacity: 1; }
+    }
+  
+    @keyframes slideFadeInFromRight {
+      0% { transform: translateX(100px) scale(0.95); opacity: 0; }
+      100% { transform: translateX(0) scale(1); opacity: 1; }
+    }
+    /*form section*/
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  flex-direction: row; /* Ensure side-by-side */
+}
+
+.form-images {
+  flex: 1 1 250px;
+  max-width: 550px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-content: flex-start;
+}
+
+.form-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-form {
+  flex: 1 1 400px;
+  max-width: 500px;
+  width: 100%;
+  background: #f9f9f9;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.phone-input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-input-group select {
+  width: 90px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: linear-gradient(135deg, #0D1B2A, #00ACC1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+ background: linear-gradient(135deg, #0D1B2A, #00ACC1);
+}
+
+    /*==============================
+      About Section
+    ==============================*/
+  .about-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+
+    .intro-section,
+    .bio {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+
+    .intro-section.animate,
+    .bio.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .intro-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .image-section {
+      flex: 1;
+      min-width: 280px;
+      max-width: 400px;
+      text-align: center;
+      padding: 20px;
+      background: #f0f0f0;
+      border-radius: 10px;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .founder-name {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #7f1b91;
+      display: block;
+    }
+
+    .commitment-section {
+      flex: 1;
+      min-width: 280px;
+      padding: 20px;
+      color: #ff0099;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+    }
+    .bio {
+  margin-top: 40px;
+  color: burlywood;
+  font-size: 16px; /* Increased from 15px to 18px */
+  line-height: 1.8; /* Optional: slightly increased line height for better readability */
+}
+
+
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes popInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-left.in-view {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.animate-right.in-view {
+  animation: popInRight 1s ease-out forwards;
+}
+
+.animate.in-view {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+    /*==============================
+      Reason Boxes
+    ==============================*/
+    h3 {
+      font-size: 2.4em;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      color: #222;
+    }
+  
+    .reason-box {
+      opacity: 0;
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 18px 24px;
+      background-color: #f4f8ff;
+      border-left: 5px solid var(--primary-color);
+      border-radius: 10px;
+      font-size: 1em;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transform: scale(0.95);
+      transition: none;
+    }
+  
+    .reason-box.animate-left {
+      animation: slideFadeInFromLeft 1s ease forwards;
+    }
+  
+    .reason-box.animate-right {
+      animation: slideFadeInFromRight 1s ease forwards;
+    }
+  
+    /*==============================
+      Know More Button
+    ==============================*/
+    .know-more-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: rgb(170, 177, 186);
+      background-color: transparent;
+      border: 2px solid #8d00ad;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+  
+    .know-more-btn:hover {
+      background-color: #90ad00;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 74, 173, 0.2);
+    }
+  
+    .know-more-btn:active {
+      transform: scale(0.98);
+    }
+  
+    /*==============================
+      Footer
+    ==============================*/
+    footer {
+     background: linear-gradient(135deg, #0d1b2a,#00acc1);
+    border-top: 1px solid #ccc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-icons {
+    margin-top: 10px;
+  }
+
+  .footer-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .footer-icons a:hover {
+    color: #ccc;
+  }
+
+    /*==============================
+      Contact Button
+    ==============================*/
+    .contact-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #28a745;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 1.5em;
+      z-index: 999;
+    }
+  
+    .contact-float:hover {
+      background: #218838;
+    }
+  
+    /*==============================
+      Responsive Adjustments
+    ==============================*/
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    max-width: 100%;
+  }
+
+  .card-wrapper {
+    justify-content: center;
+  }
+
+  .card {
+    min-width: 90%;
+    max-width: 320px;
+  }
+
+  .card h5 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+}
+
+    @media (max-width: 768px) {
+  .form-images {
+    grid-template-columns: 1fr; /* On mobile: 1 column */
+  }
+}
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      nav {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background: linear-gradient(135deg, #0d1b2a,#00acc1);
+        padding: 0.5em 0;
+      }
+
+      nav a {
+        padding: 0.5em 1em;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      nav.show {
+        display: flex;
+      }}
+
+      .tagline {
+        font-size: 1em;
+        margin-top: 10px;
+      }
+  
+      .intro-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 15px;
+      }
+  
+      .image-section img {
+        margin-bottom: 5px;
+      }
+  
+      .founder-name {
+        margin-bottom: 5px;
+      }
+  
+      .commitment-section {
+        margin-top: 0;
+      }
+  
+      .bio {
+        padding: 15px;
+      }
+    
+  </style>
+  
+</head>
+<body>
+  <!-- Overlay for mobile nav -->
+  <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+  <!-- Header Section -->
+   <header>
+      <div class="header-title">
+    <h1>Shreshtha Secure</h1>
+    <span class="tagline">"Where Vision Meets Value"</span>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  <nav id="navbar">
+    <a href="Home.html">Home</a>
+    <a href="Services.html">Services</a>
+    <a href="Aboutus.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="why us.html">Why Us</a>
+    <a href="trans.html">Transact</a>
+  </nav>
+
+    
+  </header>
+
+  <!-- Logo  -->
+  
+
+    <!-- Left Section -->
+    <div class="container">
+    <!-- Left Section -->
+    <div class="section" style="border-color: #e6dac2;">
+      <h2>Financial Planning & Advisory Services</h2>
+      <div class="card-wrapper">
+        <div class="card blue">
+          <div class="icon">🏺</div>
+          <div class="card-content">
+            <h5>Investment Planning</h5>
+            <p>Goal-Based Return Optimization</p>
+          </div>
+        </div>
+        <div class="card green">
+          <div class="icon">🛡</div>
+          <div class="card-content">
+            <h5>Insurance Planning</h5>
+            <p>Health Insurance<br />Life Insurance</p>
+          </div>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <a href="#contact" class="know-more-btn">Invest now</a>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="section" style="border-color: #d6cce7;">
+      <h2>Distribution Services</h2>
+      <div class="card-wrapper">
+        <div class="card purple">
+          <div class="icon">🏺</div>
+          <div class="card-content">
+            <h5>Investment Solutions</h5>
+            <p>Mutual Funds<br />Gold portfolio mgmt services</p>
+          </div>
+        </div>
+        <div class="card violet">
+          <div class="icon">🛡</div>
+          <div class="card-content">
+            <h5>Insurance</h5>
+            <p>Life Insurance<br />Health Insurance</p>
+          </div>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <a href="#contact" class="know-more-btn">Let's Talk</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- Services Section -->
+  <section class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-carousel owl-carousel owl-theme">
+      <!-- Repeat for each service -->
+       <div class="item">
+        <img src="mutual.jpg" alt="Mutual Funds">
+        <h3>Mutual Funds</h3>
+        <p>Invest across equity, debt, and hybrid funds tailored to your financial goals and risk profile.</p>
+      </div>
+       <div class="item">
+        <img src="insurance.jpg" alt="Insurance">
+        <h3>Insurance</h3>
+        <p>Protect what matters most with our wide range of life, health, and general insurance plans.</p>
+      </div>
+      <div class="item">
+        <img src="broking.jpg" alt="Broking">
+        <h3>Broking</h3>
+        <p>Trade confidently with real-time access to markets, insights, and expert support.</p>
+      </div>
+      <div class="item">
+        <img src="Fixed.png" alt="Fixed Deposits">
+        <h3>Fixed Deposits</h3>
+        <p>Secure returns from institutions like Bajaj Finance and HDFC with attractive interest rates.</p>
+      </div>
+      <div class="item">
+        <img src="bonds.png" alt="Bonds">
+        <h3>Bonds</h3>
+        <p>Explore government and corporate bonds, including 54EC tax-saving options.</p>
+      </div>
+      <div class="item">
+        <img src="pms.png" alt="PMS & AIF">
+        <h3>PMS & AIF</h3>
+        <p>Advanced investment solutions for HNIs through PMS and AIFs for wealth growth.</p>
+      </div>
+    </div>
+  </section>
+
+
+<div class="contact-container">
+  <div class="form-images">
+    <img src="image1.png" alt="Image 1">
+    <img src="image2.png" alt="Image 2">
+    <img src="image3.png" alt="Image 3">
+    <img src="image4.jpg" alt="Image 4">
+  </div>
+
+  <!-- Right Side Form -->
+  <div id="contact" class="contact-form animate-right">
+    <h2>Get Started with Shreshtha Advisory</h2>
+
+    <form action="submit.php" method="POST">
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Lead from Website!">
+      <input type="hidden" name="_template" value="table">
+
+      <input type="text" name="fullname" placeholder="Full Name*" required>
+
+      <div class="phone-input-group">
+        <select name="countrycode" required>
+          <option value="+91">+91</option>
+        </select>
+        <input type="tel" name="mobile" placeholder="Mobile*" required maxlength="10"
+          pattern="[0-9]{10}" inputmode="numeric"
+          oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+      </div>
+
+      <input type="email" name="email" placeholder="Email*" required>
+      <input type="text" name="city" placeholder="City Name">
+
+      <select name="service" required>
+        <option value="">What are you looking for?</option>
+        <option value="mutualfunds">Mutual Funds</option>
+        <option value="insurance">Insurance</option>
+        <option value="broking">Broking</option>
+        <option value="fd">Fixed Deposits</option>
+        <option value="bonds">Bonds</option>
+        <option value="pms">PMS & AIF</option>
+      </select>
+
+      <select name="networth">
+        <option value="">Net Worth</option>
+        <option value="under10">Below ₹10L</option>
+        <option value="10to50">₹10L - ₹50L</option>
+        <option value="above50">Above ₹50L</option>
+      </select>
+
+      <select name="referral">
+        <option value="">How did you hear about us?</option>
+        <option value="google">Google</option>
+        <option value="social">Social Media</option>
+        <option value="referral">Referral</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit">Start Now</button>
+    </form>
+  </div>
+  </div>
+</section>
+<div class="about-container">
+  <h2>About Us</h2>
+  <div class="intro-section" id="animatedSection">
+    <div class="image-section" role="img" aria-label="Photo of Vishal Prakash Kawle">
+      <img src="sss.jpg" alt="Vishal Prakash Kawle" loading="lazy" />
+      <strong class="founder-name">Founder – Vishal Prakash Kawle</strong>
+    </div>
+    <div class="commitment-section animate-right">
+      I remain deeply committed to delivering value, building trust, and fostering long-term financial well-being for my clients.
+    </div>
+  <div class="bio" id="bioSection">
+    <h4>About Vishal Prakash Kawle</h4>
+    <p>With over 14 years of distinguished experience in the financial services industry, I have built a strong track record of delivering tailored wealth solutions to a diverse and discerning clientele. My most significant tenure was with SBI Mutual Fund, where I played a pivotal role in managing and curating bespoke portfolios for Ultra High Net-Worth Individuals (UHNI), consistently driving client satisfaction and portfolio growth.</p>
+<a href="Aboutus.html" class="know-more-btn">Know More</a>
+  </div>
+</div>
+</div>
+ <!-- Why Us Section -->
+  <section class="why-us-section" style="padding: 40px; background: #f1f1f1;">
+    <h3 style="text-align: center;">WHY US</h3>
+    <div class="reason-boxes" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+      <div class="reason-box"><strong>🤝 Proven Track Record</strong><br>Trusted by Hundreds of Clients Across Multiple Sectors<br>Delivering Consistent Results and Long-Term Value</div>
+      <div class="reason-box"><strong>🔍 Transparent, Real-Time Insights</strong><br>Track your portfolio with crystal-clear reports. No hidden fees, no guesswork.</div>
+      <div class="reason-box"><strong>⚙ Tailored to You</strong><br>Build personalized strategies based on your goals and risk appetite.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+ <footer>
+    <p>&copy; 2025 Shreshtha Advisory | Phone: +91-9769763199 / 7506111883 | Email: shreshthaadvisory23@gmail.com</p>
+    <p>AMFI Registered Mutual Fund Distributor</p>
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+<a href="https://wa.me/917506111883?text=Hello%20Shreshtha%20Advisory%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="contact-float" title="Chat on WhatsApp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  // Toggle Mobile Menu
+ function toggleMenu() {
+    const nav = document.getElementById('navbar');
+    nav.classList.toggle('show');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  document.querySelectorAll('.about-item, #animatedSection, #bioSection').forEach(el => {
+    observer.observe(el);
+  });
+ // Owl Carousel Initialization
+$(document).ready(function () {
+  $(".services-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 1500, // Reduced from 3000 to 1500ms for faster movement
+    autoplayHoverPause: true,
+    smartSpeed: 600, // Optional: speed of the transition animation (in ms)
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1024: { items: 3 }
+    }
+  });
+});
+
+  // Intersection Observer for Animations
+  document.addEventListener("DOMContentLoaded", () => {
+    const animatedElements = document.querySelectorAll(".animate-left, .animate-right, .animate-top");
+
+    const animationObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view", "visible");
+        } else {
+          entry.target.classList.remove("in-view");
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    animatedElements.forEach(el => animationObserver.observe(el));
+  });
+
+  // Scroll-Triggered Popup Animation
+  function handlePopupOnScroll() {
+    const logo = document.getElementById('logo-popup');
+    const tagline = document.getElementById('tagline-popup');
+    const triggerPoint = window.innerHeight;
+
+    [logo, tagline].forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < triggerPoint - 50) {
+        el.classList.add('visible');
+      }
+    });
+  }
+
+  // Reason Boxes Animation with Staggered Delay
+  const reasonBoxes = document.querySelectorAll('.reason-box');
+  const reasonObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      const box = entry.target;
+      if (entry.isIntersecting) {
+        box.style.animationDelay = `${index * 0.3}s`;
+        box.classList.remove('animate-left', 'animate-right');
+        void box.offsetWidth; // reflow
+        box.classList.add(index % 2 === 0 ? 'animate-left' : 'animate-right');
+      } else {
+        box.style.animationDelay = '0s';
+        box.classList.remove('animate-left', 'animate-right');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  reasonBoxes.forEach(box => reasonObserver.observe(box));
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom >= 0
+    );
+  }
+
+  function animateOnScroll() {
+    document.querySelectorAll('.animate-left, .animate-right, .animate').forEach(el => {
+      if (isInViewport(el)) {
+        el.classList.add('in-view');
+      }
+    });
+  }
+
+  window.addEventListener('load', animateOnScroll);
+  window.addEventListener('scroll', animateOnScroll);
+</script>
+
+<!-- Toast Container -->
+<div id="toast" style="
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #323232;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: none;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-family: Arial, sans-serif;
+"></div>
+
+<script>
+function showToast(message, success = true) {
+  const toast = document.getElementById('toast');
+  toast.innerText = message;
+  toast.style.backgroundColor = success ? '#28a745' : '#dc3545';
+  toast.style.display = 'block';
+
+  setTimeout(() => {
+    toast.style.display = 'none';
+  }, 3000);
+}
+
+// Intercept form submission
+document.querySelector('form').addEventListener('submit', function (e) {
+  e.preventDefault(); // Stop default POST navigation
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  fetch('submit.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.text())
+  .then(result => {
+    if (result.includes('Thank you')) {
+      showToast('✅ Submitted successfully!');
+      form.reset(); // Optional: clear form after success
+    } else {
+      showToast('❌ Failed to submit. Try again.', false);
+      console.error(result); // Show server error in console
+    }
+  })
+  .catch(error => {
+    showToast('❌ Server error.', false);
+    console.error(error);
+  });
+});
+</script>
+
+
+
+
+</body>
+</html>

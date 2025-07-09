@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Shreshtha Advisory</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+      /* General & Header */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d1b2a,#00acc1);
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .header-title {
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+
+    .header-title h1 {
+      margin: 0;
+      font-size: 1.6em;
+    }
+    @font-face {
+  font-family: 'Samarkan';
+  src: url('fonts/SAMARN__.TTF') format('truetype');
+}
+h1, .samarkan-text {
+  font-family: 'Samarkan', cursive;
+}
+
+
+    .header-title .tagline {
+      font-size: 1em;
+      font-weight: normal;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.8em;
+      cursor: pointer;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      font-size: 1.8em;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      gap: 1em;
+    }
+
+    nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Makes it bold */
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .banner-container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background: url('contactbg.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 2em 0;
+    }
+
+    .banner-text {
+      margin-top: 30px;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 8px;
+      animation: zoomIn 1.5s ease-out forwards;
+      opacity: 0;
+      text-align: center;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    main {
+      padding: 2em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    .contact-form button {
+      background: linear-gradient(135deg, #0d1b2a,#00acc1);
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      float: right;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: linear-gradient(135deg, #0d1b2a,#00acc1);
+      transform: scale(1.05);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 2em;
+      border-radius: 8px;
+    }
+
+    .contact-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #28a745;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 1.5em;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      text-align: center;
+    }
+
+    .contact-float:hover {
+      background: #218838;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #0d1b2a,#00acc1);
+      color: white;
+      text-align: center;
+      font-size: 0.9em;
+      padding: 1em;
+      margin-top: 2em;
+    }
+
+    .footer-icons {
+      margin-top: 0.5em;
+    }
+
+    .footer-icons a {
+      color: white;
+      margin: 0 0.4em;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    .footer-icons a:hover {
+      color: #ffd700;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      nav {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background: linear-gradient(135deg, #0d1b2a,#00acc1);
+        padding: 0.5em 0;
+      }
+
+      nav a {
+        padding: 0.5em 1em;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      nav.show {
+        display: flex;
+      }
+      .banner-text {
+        font-size: 1.5rem;
+        margin-top: 20px;
+      }
+      .banner-container {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+ <header>
+     <div class="header-title">
+    <h1>Shreshtha Secure</h1>
+    <span class="tagline">"Where Vision Meets Value"</span>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  <nav id="navbar">
+    <a href="Home.html">Home</a>
+    <a href="Services.html">Services</a>
+    <a href="Aboutus.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="why us.html">Why Us</a>
+    <a href="trans.html">Transact</a>
+  </nav>
+
+    
+  </header>
+
+  <main>
+
+    <div class="banner-container">
+      <div class="banner-text">Contact Us</div>
+    </div>
+
+    <h2>Get in Touch</h2>
+    <p><strong>Address:</strong> T-11, Ground Floor, Pancharatna CHSL, S.V.P Road, Opp SBI Ganjawala Lane, Borivali West, Mumbai-400092</p>
+    <p><strong>Phone:</strong> +91-9769763199 / 7506111883</p>
+    <p><strong>Email:</strong> shreshthaadvisory23@gmail.com</p>
+
+    <h3>Send us a Message</h3>
+<form class="contact-form" action="contact.php" method="post">
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.603411759494!2d72.8412419750439!3d19.126106750560094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b71c7e0ec6f1%3A0x6f104b69d92621cf!2sGanjawala%20Lane%2C%20Borivali%20West%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1713870032636!5m2!1sen!2sin" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </main>
+
+  <a href="https://wa.me/917506111883?text=Unleash%20the%20power%20of%20your%20wealth%20with%20us" 
+     class="contact-float" 
+     title="Chat on WhatsApp" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+ <footer>
+    <p>&copy; 2025 Shreshtha Secure | Phone: +91-9769763199 / 7506111883 | Email: shreshthaadvisory23@gmail.com</p>
+    <p>AMFI Registered Mutual Fund Distributor</p>
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+  <script>
+   function toggleMenu() {
+    const nav = document.getElementById('navbar');
+    nav.classList.toggle('show');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  document.querySelectorAll('.about-item, #animatedSection, #bioSection').forEach(el => {
+    observer.observe(el);
+  });
+  </script>
+
+<div id="toast" style="position: fixed; top: 20px; right: 20px; background: #28a745; color: white; padding: 12px 20px; border-radius: 8px; display: none; z-index: 9999;"></div>
+
+<script>
+  const form = document.querySelector('.contact-form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    fetch('contact.php', {
+      method: 'POST',
+      body: data
+    })
+    .then(res => res.text())
+    .then(msg => {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.style.display = "block";
+
+      if (msg.includes("✅")) {
+        toast.style.backgroundColor = "#28a745"; // green
+        form.reset();
+      } else {
+        toast.style.backgroundColor = "#dc3545"; // red
+      }
+
+      setTimeout(() => toast.style.display = "none", 3000);
+    })
+    .catch(() => {
+      const toast = document.getElementById('toast');
+      toast.textContent = "❌ Something went wrong!";
+      toast.style.backgroundColor = "#dc3545";
+      toast.style.display = "block";
+      setTimeout(() => toast.style.display = "none", 3000);
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
+  

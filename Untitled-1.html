@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreshtha Cards</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #081c2d, #3d1d57);
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 50px 20px;
+      gap: 40px;
+    }
+
+    .section {
+      border: 2px solid;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 500px;
+      flex: 1 1 300px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .section h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .card-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 200px;
+      max-width: 220px;
+      min-height: 180px;
+      border-radius: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card .icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .card h5 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    /* Colors */
+    .blue {
+      background: linear-gradient(135deg, #0079bf, #00c6ff);
+    }
+
+    .purple {
+      background: linear-gradient(135deg, #7b2ff7, #f107a3);
+    }
+
+    .green {
+      background: linear-gradient(135deg, #00b09b, #96c93d);
+    }
+
+    .violet {
+      background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    }
+
+    /* Button styling */
+    .button-wrapper {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .know-more-btn {
+      padding: 10px 20px;
+      background-color: #ffffff20;
+      border: 1px solid #ffffff50;
+      border-radius: 6px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .know-more-btn:hover {
+      background-color: #ffffff40;
+      transform: translateY(-2px);
+    }
+
+    /* Target section */
+    #more-info {
+      margin: 80px auto;
+      max-width: 800px;
+      padding: 40px 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      border: 2px dashed #ccc;
+    }
+
+    /* Responsive Text */
+    @media (max-width: 600px) {
+      .card h5 {
+        font-size: 16px;
+      }
+
+      .card p {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Left Section -->
+    <div class="section" style="border-color: #e6dac2;">
+      <h2>Financial Planning & Advisory Services</h2>
+      <div class="card-wrapper">
+        <div class="card blue">
+          <div class="icon">🏺</div>
+          <div class="card-content">
+            <h5>Investment Planning</h5>
+            <p>Goal-Based Return Optimization</p>
+          </div>
+        </div>
+        <div class="card green">
+          <div class="icon">🛡</div>
+          <div class="card-content">
+            <h5>Insurance Planning</h5>
+            <p>Health Insurance<br />Life Insurance</p>
+          </div>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <a href="#more-info" class="know-more-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="section" style="border-color: #d6cce7;">
+      <h2>Distribution Services</h2>
+      <div class="card-wrapper">
+        <div class="card purple">
+          <div class="icon">🏺</div>
+          <div class="card-content">
+            <h5>Investment Solutions</h5>
+            <p>Mutual Funds<br />Gold portfolio mgmt services</p>
+          </div>
+        </div>
+        <div class="card violet">
+          <div class="icon">🛡</div>
+          <div class="card-content">
+            <h5>Insurance</h5>
+            <p>Life Insurance<br />Health Insurance</p>
+          </div>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <a href="#more-info" class="know-more-btn">Know More</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Target Section to Scroll To -->
+  <div id="more-info">
+    <h2>More About Our Services</h2>
+    <p>Here you'll find detailed information about our financial planning, investment advisory, and insurance distribution services. Contact us to learn more or schedule a consultation.</p>
+  </div>
+
+</body>
+</html>

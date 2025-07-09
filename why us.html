@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Why Choose Us - Shreshtha Advisory</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"/>
+  
+  <style>
+    /* General & Header */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d1b2a,#00acc1);
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .header-title {
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+
+    .header-title h1 {
+      margin: 0;
+      font-size: 1.6em;
+    }
+    @font-face {
+  font-family: 'Samarkan';
+  src: url('fonts/SAMARN__.TTF') format('truetype');
+}
+h1, .samarkan-text {
+  font-family: 'Samarkan', cursive;
+}
+
+
+    .header-title .tagline {
+      font-size: 1em;
+      font-weight: normal;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.8em;
+      cursor: pointer;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      font-size: 1.8em;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      gap: 1em;
+    }
+
+    nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Makes it bold */
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+    nav a:hover {
+      text-decoration: underline;
+    }
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1.5em;
+    }
+
+    .why-box {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2em;
+    }
+
+    .reason-box {
+      background-color: #fff8f2;
+      border: 1px solid #fd7d26;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(224, 222, 222, 0.05);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .reason-box strong {
+      display: block;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      color: #fd7d26;
+    }
+
+    .reason-box:hover {
+      background-color: #fd7d26;
+      color: white;
+      transform: translateY(-5px);
+    }
+
+    .reason-box:hover strong {
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 3em;
+      padding: 1em;
+      background: linear-gradient(135deg, #0d1b2a,#00acc1);
+      color: white;
+    }
+
+    .footer-icons {
+      margin-top: 0.5em;
+    }
+
+    .footer-icons a {
+      color: white;
+      margin: 0 0.5em;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+
+    .footer-icons a:hover {
+      color: #ffd700;
+    }
+
+    .contact-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #28a745;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 1.5em;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    .contact-float:hover {
+      background: #218838;
+    }
+
+    /* Responsive */
+ 
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      nav {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background: linear-gradient(135deg, #0d1b2a,#00acc1);
+        padding: 0.5em 0;
+      }
+
+      nav a {
+        padding: 0.5em 1em;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      nav.show {
+        display: flex;
+      }}
+
+    @media (max-width: 480px) {
+      .banner {
+        height: 150px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-title">
+    <h1>Shreshtha Secure</h1>
+    <span class="tagline">"Where Vision Meets Value"</span>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  <nav id="navbar">
+    <a href="Home.html">Home</a>
+    <a href="Services.html">Services</a>
+    <a href="Aboutus.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="why us.html">Why Us</a>
+    <a href="trans.html">Transact</a>
+  </nav>
+
+    
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="why-box">
+      <div class="reason-box">
+        <strong>💡 Smarter Investing, Simplified</strong>
+        Our intuitive platform makes it easy for you to invest with confidence—whether you’re a beginner or a seasoned investor.
+      </div>
+
+      <div class="reason-box">
+        <strong>🔍 Transparent, Real-Time Insights</strong>
+        Track your portfolio in real time with crystal-clear analytics and performance reports. No hidden fees, no guesswork.
+      </div>
+
+      <div class="reason-box">
+        <strong>⚙ Tailored to You</strong>
+        Our intelligent tools help you build personalized investment strategies based on your goals, risk appetite, and preferences.
+      </div>
+
+      <div class="reason-box">
+        <strong>🔐 Bank-Level Security</strong>
+        Your data and assets are protected with advanced encryption and secure protocols—so you can focus on growing your wealth, worry-free.
+      </div>
+
+      <div class="reason-box">
+        <strong>📈 Access to Expert-Curated Opportunities</strong>
+        From diversified portfolios to emerging market opportunities, gain access to investment options typically reserved for institutions.
+      </div>
+
+      <div class="reason-box">
+        <strong>🧠 Backed by Experience</strong>
+        Built by finance professionals and tech innovators, our platform combines deep market knowledge with cutting-edge technology.
+      </div>
+      <div class="reason-box">
+        <strong>🤝Proven Track Record</strong>
+        Trusted by Hundreds of Clients Across Multiple Sectors
+        Delivering Consistent Results, Long-Term Value, and Exceptional Client Satisfaction
+      </div>
+    </div>
+  </main>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/917506111883?text=Hello%20Shreshtha%20Advisory%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." 
+     class="contact-float" 
+     title="Chat on WhatsApp" 
+     target="_blank">
+     <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shreshtha Secure | Phone: +91-9769763199 / 7506111883 | Email: shreshthaadvisory23@gmail.com</p>
+    <p>AMFI Registered Mutual Fund Distributor</p>
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+<script>
+ function toggleMenu() {
+    const nav = document.getElementById('navbar');
+    nav.classList.toggle('show');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  document.querySelectorAll('.about-item, #animatedSection, #bioSection').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
